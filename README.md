@@ -1,1 +1,2 @@
-# ProgLang_lab1
+# ProgLang
+Here will be labs of Programming languages and broadcast methods.
