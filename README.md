@@ -4,9 +4,9 @@
 Запустить те или иные программы из лабораторных работ:
 Зайти в директорию интересующей нас лабораторной работы.
 Скачать программу после используя команду в терминале (Linux) вписать команду (до этого установив gcc, командой на Ubuntu
-```apt install gcc```
+```sudo apt install gcc```
  или
- ```apt-get install gcc```
+ ``` sudo apt-get install gcc```, на старых версиях Ubuntu
  , в других дистрибутивах обратиться к документации):
 ```
 gcc <name_of_file>
@@ -29,9 +29,9 @@ Here will be labs of Programming languages and broadcast methods.
 Run certain programs from laboratory work:
 Go to the directory of the laboratory work that interests us.
 Download the program after using the command in the terminal (Linux) enter the command (having previously installed gcc, using the command on Ubuntu
-```apt install gcc```
+```sudo apt install gcc```
 or
-```apt-get install gcc```
+```sudo apt-get install gcc``` on old versions Ubuntu
 , in other distributions refer to the documentation):
 ```
 gcc name_of_file
