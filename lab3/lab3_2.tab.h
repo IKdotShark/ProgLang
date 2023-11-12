@@ -52,10 +52,12 @@ extern int yydebug;
     INTEGER = 258,
     SUM = 259,
     SUB = 260,
-    OBRACE = 261,
-    EBRACE = 262,
-    EOL = 263,
-    NUMBER = 264
+    MUL = 261,
+    DIV = 262,
+    OBRACE = 263,
+    EBRACE = 264,
+    EOL = 265,
+    NUMBER = 266
   };
 #endif
 

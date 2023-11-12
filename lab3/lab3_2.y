@@ -9,7 +9,7 @@ int main(int argc, char **argv);
 %}
 
 %token INTEGER 
-%token SUM SUB
+%token SUM SUB MUL DIV
 %token OBRACE EBRACE
 %token EOL
 %token NUMBER
@@ -25,7 +25,12 @@ exp: factor
 | exp SUB factor { $$ = $1 - $3; }
 ;
 
-factor: INTEGER
+factor: term
+| factor MUL term { $$ = $1 * $3; }
+| factor DIV term { $$ = $1 / $3; }
+;
+
+term: INTEGER
 | OBRACE exp EBRACE { $$ = $2; }
 ;
 
