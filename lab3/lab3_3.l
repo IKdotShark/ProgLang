@@ -1,6 +1,6 @@
 %{
 #include <stdio.h>
-#include "parser.tab.h"
+#include "lab3_3.tab.h"
 void Errors();
 %}
 
