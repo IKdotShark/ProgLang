@@ -64,9 +64,22 @@ void parse() {
 }
 
 /*
+Broadcast scheme
 
+factor -> expr
+	| digit { post[index] := digit || index++ }
 
+term -> factor MultiplAndDivision
+MultiplAndDivision -> *factor { post[index] := ‘*’ || index++ } MultiplAndDivision
+	| / factor { post[index] := ‘/’ || index++ } MultiplAndDivision
+	| e
 
+expr -> term AddandSub
+AddandSub -> + term { post[index] := ‘+’  || index++} AddandSub
+	| - term { post[index] := ‘-’ || index++ } AddandSub
+	| e
+ 
+parse → expr { print(expr) }
 */
 
 int main() {
