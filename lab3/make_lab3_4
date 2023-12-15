@@ -1,0 +1,19 @@
+CC = gcc
+LEX = flex
+YACC = bison
+CFLAGS = -Wall -g
+LDFLAGS = -lm
+
+lab3_4: lex.yy.c lab3_4.tab.c
+	$(CC) $(CFLAGS) $^ -o $@ $(LDFLAGS)
+
+lex.yy.c: lab3_4.l lab3_4.tab.h
+	$(LEX) $<
+
+lab3_4.tab.c lab3_4.tab.h: lab3_4.y
+	$(YACC) -d $<
+
+clean:
+	rm -f lab3_4 lex.yy.c lab3_4.tab.c lab3_4.tab.h
+
+.PHONY: clean
