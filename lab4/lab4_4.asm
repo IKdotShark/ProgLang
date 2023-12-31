@@ -48,7 +48,7 @@ SWAP
     LD R0, NEWLINE
     OUT
 
-    LEA R1, ORIGINAL
+    LEA R1, CONSTATEXP
     LD R2, COUNT
 
 OUTCONSTATEXP
@@ -75,9 +75,9 @@ OUTNUMBERS
 
     HALT                
 
-PROMPT .STRINGZ "Enter 10 numbers: "
-NUMBERS .BLKW 10       
-CONSTATEXP .BLKW 10       
+PROMPT .STRINGZ "Enter 10 numbers in line (0-9): "
+NUMBERS .BLKW #10       
+CONSTATEXP .BLKW #10       
 COUNT .FILL #10       
 NEG48 .FILL #-48      
 POS48 .FILL #48       
