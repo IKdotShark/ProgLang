@@ -1,0 +1,16 @@
+time
+motion detected
+pc on 1 program
+music on 1 track
+teapot on 60 degrees
+check
+pc on 2 program
+motion undetected
+heater on 30 degrees
+music off 0 track
+check
+danger on
+check
+danger off
+check
+
