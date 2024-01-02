@@ -9,13 +9,14 @@ extern int yylval;
 %%
 time				    { return TIME; }
 motion			        { return MOTION; }
-detected|not_detected	{ yylval=!strcmp(yytext,"detected");return DETECTION; }
+detected|undetected	    { yylval=!strcmp(yytext,"detected");return DETECTION; }
 on|off			        { yylval=!strcmp(yytext,"on");return STATE; }
 degrees			        { return DEGREES; }
 pc				        { return PC; }
 music                   { return MUSIC; }
 track                   { return TRACK; }
 program			        { return PROGRAM; }
+teapot                  { return TEAPOT; }
 [0-9]+ 			        { yylval=atoi(yytext); return NUMBER; }
 check				    { return CHECK; }
 heater			        { return HEATER; }
