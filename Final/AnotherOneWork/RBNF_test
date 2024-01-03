@@ -1,0 +1,48 @@
+<program> ::= <statements>
+
+<statements> ::= <statement> | <statements> <statement>
+
+<statement> ::= <time_statement>
+            | <motion_statement>
+            | <detection_statement>
+            | <state_statement>
+            | <degrees_statement>
+            | <pc_statement>
+            | <music_statement>
+            | <track_statement>
+            | <program_statement>
+            | <teapot_statement>
+            | <number_statement>
+            | <check_statement>
+            | <heater_statement>
+            | <danger_statement>
+
+<time_statement> ::= "time"
+
+<motion_statement> ::= "motion"
+
+<detection_statement> ::= "detected" | "undetected"
+
+<state_statement> ::= "on" | "off"
+
+<degrees_statement> ::= "degrees"
+
+<pc_statement> ::= "pc"
+
+<music_statement> ::= "music"
+
+<track_statement> ::= "track"
+
+<program_statement> ::= "program"
+
+<teapot_statement> ::= "teapot"
+
+<number_statement> ::= <number>
+
+<check_statement> ::= "check"
+
+<heater_statement> ::= "heater"
+
+<danger_statement> ::= "danger"
+
+<number> ::= [0-9]+
