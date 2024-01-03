@@ -76,7 +76,7 @@
     Heater:
         HEATER STATE NUMBER DEGREES{
                 if($2){
-                    if($3 > 100){heater_temp = 80;}
+                    if($3 > 50){heater_temp = 50;}
                     else{heater_temp=$3;}
                     fprintf(yyout,"Включаю обогреватель -> устанавливаю заданную температуру ");fprintf(yyout,"%d",heater_temp);}
                 else if(danger_stat = 0){fprintf(yyout,"Выключаю обогреватель\n");heater_temp=0;}
@@ -122,7 +122,7 @@
             if($2){
                 fprintf(yyout, "Включен режим опастности\n");
                 track = 3;
-                heater_temp = 60;
+                heater_temp = 80;
                 danger_stat = 1;
             }
             else {
